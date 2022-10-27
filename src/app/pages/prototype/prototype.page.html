@@ -1,0 +1,28 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Prototype</ion-title>
+    <ion-buttons slot="start">
+      <ion-menu-button menu="main-menu"></ion-menu-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+
+</ion-content>
+
+<ion-header>
+  <ion-toolbar color="primary">
+    <ion-title>
+      Ionic Image Zoom
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-slides [options]="sliderOpts" class="preview-slides">
+    <ion-slide *ngFor="let img of [1, 2, 3, 4]">
+      <img src="assets/image.jpg">
+    </ion-slide>
+  </ion-slides>
+</ion-content>

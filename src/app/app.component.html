@@ -1,3 +1,44 @@
 <ion-app>
-  <ion-router-outlet></ion-router-outlet>
+  <ion-menu menuId="main-menu" contentId="main">
+    <ion-header>
+    <ion-button routrLink="home" slot="end"><ion-icon slot="icon-only" name="home"></ion-icon></ion-button>
+  </ion-header>
+    <ion-content>
+      <div class="menu-header-bg"></div>
+      <div class="header-content">
+     
+      <ion-label>
+        <h1> UH </h1>
+        <p>University Of Hertfordshire</p>
+      </ion-label>
+    </div>
+    <ion-list lines="none">
+      <ion-menu-toggle>
+      <ion-item routerLink="app-goal">
+        <ion-icon name="Goal"></ion-icon>App Goal
+      </ion-item>
+      <ion-item routerLink="representing">
+        <ion-icon name="presenting"></ion-icon>Representing App
+      </ion-item>
+      <ion-item routerLink="prototype">
+        <ion-icon name="Pictures"></ion-icon>Prototype
+      </ion-item>
+      <ion-item routerLink="evaluation">
+        <ion-icon name="Evaluation"></ion-icon>Evaluaion
+      </ion-item>
+      <ion-item routerLink="framework">
+        <ion-icon name="Frames"></ion-icon>Framework
+      </ion-item>
+    </ion-menu-toggle>
+    </ion-list>
+    <div class="action-button">
+      <ion-button>
+        <ion-icon slot="start" name="contact"></ion-icon>Contact us
+      </ion-button>
+      </div>
+    </ion-content>
+  </ion-menu>
+  <ion-router-outlet id="main"></ion-router-outlet>
 </ion-app>
+
+
