@@ -6,10 +6,13 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./app-goal.page.scss'],
 })
 export class AppGoalPage implements OnInit {
+  navCtrl: any;
 
   constructor() { }
 
   ngOnInit() {
   }
-
+back(){
+  this.navCtrl.goBack(); 
+}
 }
