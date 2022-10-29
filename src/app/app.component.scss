@@ -30,13 +30,24 @@ h1 {
     font-weight: 400;
     color: white;
 }
-p{
+p
+{
     
     font-size: 20px;
     color: white;
     font-weight: 200;
+    
+        padding-left: 10px;
+        padding-right: 10px;
+
 
 }
+.sc-ion-label-md-s>p{
+    padding-left: 10px;
+    padding-right: 10px;
+
+}
+
 .action-button {
     display: flex;
     justify-content: center;
